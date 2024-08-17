@@ -204,7 +204,7 @@ When(/^I relaunch the app$/, async () => {
   }
 
   if (platform === 'Android') {
-    await driver.startActivity('io.metamask.qa', 'io.metamask.MainActivity');
+    await driver.startActivity('com.ocean.wallet.qa', 'com.ocean.wallet.MainActivity');
   }
 });
 
@@ -297,7 +297,7 @@ Then(/^removed test app$/, async () => {
   }
 
   if (platform === 'Android') {
-    await driver.removeApp('io.metamask.qa');
+    await driver.removeApp('com.ocean.wallet.qa');
   }
 });
 

@@ -22,7 +22,7 @@
 	<uses-sdk tools:overrideLibrary="com.tectiv3.aes" />
 
 	<application
-		android:name=".MainApplication"
+		android:name="com.ocean.wallet.MainApplication"
 		android:label="@string/app_name"
 		android:icon="@mipmap/ic_launcher"
 		android:roundIcon="@mipmap/ic_launcher_round"
@@ -38,7 +38,7 @@
      	>
 		<activity
 			android:launchMode="singleInstance"
-			android:name=".SplashActivity"
+			android:name="com.ocean.wallet.SplashActivity"
 			android:theme="@style/SplashTheme"
 			android:label="@string/app_name"
 			android:exported="false"
@@ -49,7 +49,7 @@
 		</activity>
 		<activity
 			android:launchMode="singleTask"
-			android:name=".MainActivity"
+			android:name="com.ocean.wallet.MainActivity"
 			android:label="@string/app_name"
 			android:configChanges="keyboard|keyboardHidden|orientation|screenLayout|screenSize|smallestScreenSize|uiMode"
 			android:windowSoftInputMode="adjustResize"
@@ -122,9 +122,9 @@
 		<meta-data android:name="io.branch.sdk.BranchKey.test" android:value="${MM_BRANCH_KEY_TEST}" />
 		<!-- PUSH NOTIFICATIONS -->
 		<meta-data	android:name="com.dieam.reactnativepushnotification.notification_channel_name"
-		android:value="io.metamask"/>
+		android:value="com.ocean.wallet"/>
 		<meta-data	android:name="com.dieam.reactnativepushnotification.notification_channel_description"
-		android:value="io.metamask"/>
+		android:value="com.ocean.wallet"/>
 		<meta-data	android:name="com.dieam.reactnativepushnotification.notification_color"
 		android:resource="@color/lightgray"/>
 

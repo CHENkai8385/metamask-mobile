@@ -151,7 +151,7 @@ export default class TestHelpers {
     await device.launchApp({
       newInstance: true,
       url: inputURL,
-      sourceApp: 'io.metamask',
+      sourceApp: 'com.ocean.wallet',
       launchArgs: {
         fixtureServerPort: `${getFixturesServerPort()}`,
         detoxURLBlacklistRegex: Utilities.BlacklistURLs,

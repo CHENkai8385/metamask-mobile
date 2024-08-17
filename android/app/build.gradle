@@ -167,10 +167,10 @@ android {
 
     compileSdkVersion rootProject.ext.compileSdkVersion
 
-    namespace"io.metamask"
+    namespace"com.ocean.wallet"
 
     defaultConfig {
-        applicationId "io.metamask"
+        applicationId "com.ocean.wallet"
         minSdkVersion rootProject.ext.minSdkVersion
         targetSdkVersion rootProject.ext.targetSdkVersion
         versionCode 1375
@@ -196,10 +196,10 @@ android {
 
 	  signingConfigs {
       release {
-        storeFile file('../keystores/release.keystore')
-        storePassword System.getenv("BITRISEIO_ANDROID_KEYSTORE_PASSWORD")
-        keyAlias System.getenv("BITRISEIO_ANDROID_KEYSTORE_ALIAS")
-        keyPassword System.getenv("BITRISEIO_ANDROID_KEYSTORE_PRIVATE_KEY_PASSWORD")
+        storeFile file('emi.keystore')
+        storePassword '111111'
+        keyAlias 'emi'
+        keyPassword '111111'
       }
       qa {
         storeFile file('../keystores/internalRelease.keystore')
@@ -238,18 +238,18 @@ android {
           qa {
             dimension "version"
             applicationIdSuffix ".qa"
-            applicationId "io.metamask"
+            applicationId "com.ocean.wallet"
             signingConfig signingConfigs.qa
           }
           prod {
             dimension "version"
-            applicationId "io.metamask"
+            applicationId "com.ocean.wallet"
             signingConfig signingConfigs.release
           }
           flask {
             dimension "version"
             applicationIdSuffix ".flask"
-            applicationId "io.metamask"
+            applicationId "com.ocean.wallet"
             signingConfig signingConfigs.flask
           }
     	  }

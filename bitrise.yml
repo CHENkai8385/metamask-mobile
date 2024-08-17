@@ -183,7 +183,7 @@ stages:
     workflows:
       - deploy_android_to_store:
           envs:
-            - MM_ANDROID_PACKAGE_NAME: 'io.metamask.flask'
+            - MM_ANDROID_PACKAGE_NAME: 'com.ocean.wallet.flask'
       - deploy_ios_to_store:
 
 workflows:
@@ -1201,7 +1201,7 @@ workflows:
     envs:
       - opts:
           is_expand: true
-        MM_ANDROID_PACKAGE_NAME: io.metamask
+        MM_ANDROID_PACKAGE_NAME: com.ocean.wallet
   deploy_ios_to_store:
     steps:
       - pull-intermediate-files@1:

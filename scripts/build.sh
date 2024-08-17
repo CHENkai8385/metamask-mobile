@@ -382,7 +382,7 @@ buildAndroidQA(){
   remapEnvVariableQA
 
 	if [ "$PRE_RELEASE" = false ] ; then
-		adb uninstall io.metamask.qa
+		adb uninstall com.ocean.wallet.qa
 	fi
 
 	prebuild_android
@@ -410,7 +410,7 @@ buildAndroidRelease(){
   remapEnvVariableRelease
 
 	if [ "$PRE_RELEASE" = false ] ; then
-		adb uninstall io.metamask || true
+		adb uninstall com.ocean.wallet || true
 	fi
 
 	# Enable Sentry to auto upload source maps and debug symbols
@@ -440,7 +440,7 @@ buildAndroidFlaskRelease(){
 	remapFlaskEnvVariables
 
 	if [ "$PRE_RELEASE" = false ] ; then
-		adb uninstall io.metamask.flask || true
+		adb uninstall com.ocean.wallet.flask || true
 	fi
 	prebuild_android
 
